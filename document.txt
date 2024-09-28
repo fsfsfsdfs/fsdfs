@@ -1,0 +1,54 @@
+SchoolBot Documentation
+
+Overview
+
+SchoolBot is a Telegram bot designed to assist students with their daily tasks, such as viewing schedules, receiving homework assignments, and participating in surveys. The bot also provides features for administrators to manage users, add homework assignments, and manage schedules.
+
+Features
+
+User Registration: Users can register by sending the /register command, which prompts them to enter their name.
+Schedule Viewing: Users can view their schedules by sending the /schedule command.
+Homework Assignments: Users can receive homework assignments by sending the /homework command.
+Surveys: Users can participate in surveys by sending the /survey command.
+FAQ: Users can view frequently asked questions by sending the /faq command.
+Admin Management: Administrators can manage users, add homework assignments, and manage schedules using the /add_homework, /add_schedule, and /manage_admins commands.
+Commands
+
+/start: Starts the conversation with the bot.
+/register: Registers a new user.
+/ids: Displays the user's ID.
+/schedule: Views the user's schedule.
+/homework: Views the user's homework assignments.
+/survey: Participates in a survey.
+/faq: Views the FAQ.
+/add_homework: Adds a new homework assignment.
+/add_schedule: Adds a new schedule entry.
+/manage_admins: Manages administrators.
+/support: Sends a support message to the administrators.
+/faq: Adds a new FAQ entry.
+Callback Functions
+
+callback_query_handler: Handles callback queries from the bot.
+handle_support_message: Handles support messages from users.
+handle_faq_question: Handles FAQ questions from users.
+add_faq_answer: Adds a new FAQ answer.
+Functions
+
+add_admin: Adds a new administrator.
+insert_data: Inserts data into a database table.
+get_data: Retrieves data from a database table.
+send_reminder: Sends a reminder to users with upcoming schedules.
+Variables
+
+bot_token: The bot's token.
+bot: The bot object.
+conn: The database connection.
+c: The database cursor.
+reminder_thread: The thread that runs the send_reminder function.
+Notes
+
+The bot uses a SQLite database to store user data and schedule entries.
+The bot uses a Telegram bot token to authenticate with the Telegram API.
+The bot uses the telebot library to interact with the Telegram API.
+The bot uses the sqlite3 library to interact with the database.
+The bot uses the threading library to run the send_reminder function in a separate thread.
